@@ -15,7 +15,13 @@ function bruteForce(int $target, array $stack): int
 /**
  * uses:
  *  1. Small Input
- * 2.  speed matter than efficient
+ *  2. speed matter than efficient
+ *
+ * Algorithm consume Time Complexity:
+ * O(1) on best scenario
+ *
+ * O(n) in the worst case: When target is consistently the Last Item
+ * O(n2) in the worst case: When the target is in sub array
  */
 echo bruteForce($target, $stack) . "\n";
 
