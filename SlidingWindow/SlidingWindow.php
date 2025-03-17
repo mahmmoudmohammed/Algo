@@ -19,14 +19,11 @@ function slidingWindow(array $stack, int $winSize): int
 
 /**
  * uses:
- *  1.
- *  2.
+ *  1. Sub-arrays with Product Less than K
+ *  2. Longest Substring with K Distinct Characters
  *
  * Algorithm consume Time Complexity:
- * O() on best scenario
- *
- * O() in the worst case:
- * O() in the worst case:
+ * O(n) in the worst case:
  */
 
 echo slidingWindow($stack, 3) . "\n";
