@@ -20,6 +20,13 @@ function quickSort(array $stack): array
     return [...quickSort($less), $stack[$pivot], ...quickSort($greater)];
 }
 
+/**
+ * Algorithm consume Time Complexity:
+ *
+ * O(n log n) on average
+ *
+ * O(n^2) in the worst case: When pivot is consistently the smallest or largest element
+ */
 print_r(quickSort($stack));
 
 
