@@ -24,6 +24,9 @@ function divideAndConquer(int $target, array $stack): int
 
 function divideAndConquerRecursively(int $target, array $stack, int $right, int $left = 0): int
 {
+    if ($left > $right) {
+        return -1;
+    }
     $pivot = $left + ceil(($right - $left) / 2);
     if ($stack[$pivot] === $target) {
         return $pivot;
@@ -35,7 +38,15 @@ function divideAndConquerRecursively(int $target, array $stack, int $right, int 
     }
 }
 
-echo divideAndConquer($target, $stack) . "\n";
+/**
+ * Both Technique consume Time Complexity: O(log n)
+ **/
+
+/**
+ * Main Criteria:
+ * Algorithm assume that the input array $stack is sorted.
+ */
+echo bruteForce($target, $stack) . "\n";
 
 echo divideAndConquerRecursively($target, $stack, count($stack)) . "\n";
 
