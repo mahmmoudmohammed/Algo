@@ -4,6 +4,9 @@
   "psr-4": {
     "Pattern\\": "DesignPatterns/"
   },
+  "scripts": {
+    "test facade": "php DesignPatterns/Facade/Facade.php"
+  },
   "authors": [
     {
       "name": "MahmoudSharqawi",
